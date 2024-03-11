@@ -1,7 +1,8 @@
 //Invocamos a express
 const express = require('express');
 const app = express();
-const port = 10000;
+const port = process.env.PORT || 1000;
+
 //Plantilla ejs
 app.set('view engine', 'ejs');
 
