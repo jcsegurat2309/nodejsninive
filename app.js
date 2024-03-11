@@ -1,7 +1,7 @@
 //Invocamos a express
 const express = require('express');
 const app = express();
-
+const port = 10000;
 //Plantilla ejs
 app.set('view engine', 'ejs');
 
@@ -12,6 +12,6 @@ app.use(express(JSON));
 
 app.use('/', require('./router'));
 
-app.listen(1000, ()=>{
-    console.log('SERVER corriendo en http://localhost:1000');
+app.listen(port, ()=>{
+    console.log('SERVER corriendo en ${port}');
 });
