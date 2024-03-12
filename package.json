@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "app.js",
+    "start": "node index.ejs",
     "dev": "nodemon src/app.js",
     "devStart": "nodemon server.js"
   },
@@ -29,4 +29,5 @@
     "dotenv": "^16.0.1",
     "nodemon": "^3.0.3"
   }
+  
 }
