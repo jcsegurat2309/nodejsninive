@@ -1,9 +1,9 @@
 {
   "name": "crud_node",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.ejs",
   "scripts": {
-    "start": "index.ejs",
+    "start": "app.js",
     "dev": "nodemon src/app.js",
     "devStart": "nodemon server.js"
   },
