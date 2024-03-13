@@ -1,18 +1,17 @@
 //Invocamos a express
-const express = require('express');
+const express = require("express");
 const app = express();
-const port = process.env.PORT || 1000;
+const port = 4000;
 
 //Plantilla ejs
-app.set('view engine', 'ejs');
+app.set("view engine", "ejs");
 
-// seteamos urlencoded para capturar los datos del formulario 
-app.use(express.urlencoded({extended:false}));
+// seteamos urlencoded para capturar los datos del formulario
+app.use(express.urlencoded({ extended: false }));
 app.use(express(JSON));
 
-
-app.use('/', require('./router'));
+app.use("/", require("./router"));
 
 app.listen(port, () => {
-    console.log(`Servidor corriendo en el puerto ${port}`);
-  });
+  console.log(`Servidor corriendo en el puerto`);
+});
